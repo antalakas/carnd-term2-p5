@@ -182,6 +182,7 @@ int main() {
           // Otherwise the values will be in between [-deg2rad(25), deg2rad(25] instead of [-1, 1].
           steer_value = vars[0] / (deg2rad(25) * Lf);
           throttle_value = vars[1];
+          //throttle_value = 0.6;
 
           msgJson["steering_angle"] = -steer_value;
           msgJson["throttle"] = throttle_value;
